@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Diagnosis System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Medical Diagnosis System</h1>
+    <form method="post">
+        <label>Enter symptoms (comma-separated):</label><br>
+        <input type="text" name="symptoms" size="50" required><br><br>
+        <input type="submit" value="Diagnose">
+    </form>
+
+    <h3>Available Symptoms:</h3>
+    <p>{{ ', '.join(relationships) }}</p>
+
+    {% if diagnoses %}
+        <h2>Possible Diagnoses:</h2>
+        <ul>
+            {% for disease, prob, severity in diagnoses %}
+                <li>
+                    <strong>{{ disease }}</strong> - Probability: {{ prob|round(2) }}, Severity: {{ severity }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <a href="{{ url_for('history') }}">View Patient History</a>
+</body>
+</html>
