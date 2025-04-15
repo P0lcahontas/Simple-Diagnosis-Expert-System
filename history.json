@@ -1,0 +1,71 @@
+[
+  {
+    "date": "2025-04-15 18:38:05",
+    "symptoms": [
+      "sneezing",
+      "runny_nose"
+    ],
+    "diagnosis": "Common Cold",
+    "probability": 1.0
+  },
+  {
+    "date": "2025-04-15 18:48:27",
+    "symptoms": [
+      "sneezing",
+      "runny_nose"
+    ],
+    "diagnosis": "Common Cold",
+    "probability": 1.0
+  },
+  {
+    "date": "2025-04-15 18:49:31",
+    "symptoms": [
+      "fever",
+      "cough",
+      "body_aches"
+    ],
+    "diagnosis": "Flu",
+    "probability": 1.0
+  },
+  {
+    "date": "2025-04-15 18:49:31",
+    "symptoms": [
+      "fever",
+      "cough",
+      "body_aches"
+    ],
+    "diagnosis": "Pneumonia",
+    "probability": 0.67
+  },
+  {
+    "date": "2025-04-15 18:55:50",
+    "symptoms": [
+      "sneezing",
+      "runny_nose"
+    ],
+    "diagnosis": "Common Cold",
+    "probability": 1.0
+  },
+  {
+    "date": "2025-04-15 18:58:50",
+    "symptoms": [
+      "sneezing",
+      "runny_nose",
+      "itchy_eyes",
+      "skin_rash"
+    ],
+    "diagnosis": "Common Cold",
+    "probability": 1.0
+  },
+  {
+    "date": "2025-04-15 18:58:50",
+    "symptoms": [
+      "sneezing",
+      "runny_nose",
+      "itchy_eyes",
+      "skin_rash"
+    ],
+    "diagnosis": "Allergy",
+    "probability": 1.0
+  }
+]

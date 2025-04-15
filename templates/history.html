@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+<body>
+    <h1>Patient History</h1>
+    {% if history %}
+        <ul>
+        {% for entry in history %}
+            <li>
+                {{ entry.date }} - Symptoms: {{ entry.symptoms|join(', ') }} - Diagnosis: {{ entry.diagnosis }} (Prob: {{ entry.probability }})
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No patient history available.</p>
+    {% endif %}
+    <a href="{{ url_for('index') }}">Back to Diagnosis</a>
+</body>
+</html>
